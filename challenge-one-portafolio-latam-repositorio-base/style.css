@@ -1,0 +1,464 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+
+    --color-primario: #000000;
+    --color-secundario: #f6f6f6;
+    --color-terciario: #22d4fd;
+    --color-cuarto: magenta;
+    --color-quinto: yellow;
+    --color-hover: #272727;
+}
+
+body {
+    background-color: var(--color-hover);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+    color: var(--color-quinto);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-terciario);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera, .navegacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color-secundario);
+    
+}
+
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
+    margin-left: 16px;
+    
+}
+
+.cabecera__titulo {
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    justify-content: center;
+    color: var(--color-primario);
+}
+
+.navegacion__lista {
+    display: flex;
+}
+
+.navegacion__elemento a:hover{
+    color: var(--color-primario);
+    background-color: var(--color-cuarto);
+}
+
+.navegacion__elemento__contacto a{ 
+    margin-left: 204px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--color-primario);
+}
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+    background-color: var(--color-hover);
+    justify-content: center;
+    padding: 1rem ;
+}
+
+.presentacion__foto{
+    width: 198px;
+    height: 198px;
+    border-radius: 128px;
+}
+
+.presentacion__contenedor{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.presentacion__titulo{
+    font-size: 2rem;
+    font-weight: 700;
+    align-items: justify;
+    color: var(--color-cuarto);
+    line-height: 1;
+}
+
+.presentacion__subtitulo{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-quinto);      
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+.sobre-mi{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    background-color: var(--color-hover);
+    flex-grow: 1;
+}
+
+.sobre-mi__titulo{
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--color-quinto);
+    margin-left: 16px;
+}
+
+.sobre-mi__texto{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--color-cuarto);
+    margin-left: 16px;
+}
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    background-color: var(--color-hover);
+    /*height: 558px;
+    margin-left: 16px;*/
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.habilidades__titulo{
+    font-size: /*1.375rem;*/ 2rem;
+    font-weight: 700;
+    color: var(--color-terciario);
+    margin-bottom: 1rem;
+}
+
+.habilidades__lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.habilidades__elemento{
+    /*flex-wrap: wrap;
+    margin-bottom: 32px;*/
+    text-align: center;
+    width: 120px;
+    /*height: 118px;*/
+    background-color: var(--color-hover);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 10px;
+    border: 2px solid var(--color-quinto);
+    transition: transform 0.2s;
+
+}
+
+.habilidades__elemento:hover {
+    transform: scale(1.05);
+}
+
+.habilidades__icono{
+    width: 40px;
+    height: auto;
+    /*margin-top: 38px;
+    margin-left: 16px;
+    margin-right: 116px;*/
+    margin-bottom: 0.5rem;
+
+}
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+
+.aficiones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-hover);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.aficiones__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-terciario);
+    margin-bottom: 1rem;
+}
+
+.aficiones__lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.aficiones__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-hover);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 10px;
+    border: 2px solid var(--color-quinto);
+    transition: transform 0.2s;
+}
+
+.aficiones__elemento:hover {
+    transform: scale(1.05);
+}
+
+.aficiones__icono {
+    width: 50px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.aficiones__nombre {
+    color: var(--color-cuarto);
+}
+
+/*------------------------------ Sección de Formación académica -----------------------*/
+
+.formacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-hover);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.formacion__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-terciario);
+    margin-bottom: 1rem;
+}
+
+.formacion__lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /* Espacio entre los elementos */
+}
+
+.formacion__elemento {
+    background-color: var(--color-hover);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 10px;
+    border: 2px solid var(--color-quinto);
+    transition: transform 0.2s;
+}
+
+.formacion__elemento:hover {
+    transform: scale(1.05);
+}
+
+.formacion__nombre {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-cuarto);
+    margin: 0.5rem 0;
+}
+
+.formacion__institucion {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-de-link);
+    margin: 0.25rem 0;
+}
+
+.formacion__descripcion {
+    font-size: 0.875rem;
+    color: var(--color-quinto);
+    margin: 0.5rem 0;
+}
+
+
+
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-hover);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.proyectos__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-terciario);
+    margin-bottom: 1rem;
+}
+
+.proyectos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.proyectos__elemento {
+    background-color: var(--color-hover);
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    width: 250px; /* Ajusta según sea necesario */
+    transition: transform 0.2s;
+}
+
+.proyectos__elemento:hover {
+    transform: scale(1.05);
+}
+
+.proyectos__imagen {
+    width: 100%; /* Asegúrate de que la imagen se ajuste al contenedor */
+    height: auto;
+    border-radius: 5px;
+}
+
+.proyectos__nombre {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    margin: 0.5rem 0;
+}
+
+.proyectos__descripcion {
+    font-size: 0.875rem;
+    color: var(--color-cuarto);
+    margin: 0.5rem 0;
+}
+
+.proyectos__enlace {
+    text-decoration: none;
+    color: var(--color-terciario);
+    font-weight: 600;
+    margin-top: 0.5rem;
+    display: inline-block;
+    transition: color 0.2s;
+}
+
+.proyectos__enlace:hover {
+    color: var(--color-hover);
+}
+
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-hover);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.contacto__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-terciario);
+    margin-bottom: 1rem;
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* Ajusta el ancho máximo del formulario */
+}
+
+.contacto__campo {
+    margin-bottom: 1rem;
+}
+
+.contacto__etiqueta {
+    font-weight: 600;
+    color: var(--color-primario);
+    margin-bottom: 0.5rem;
+}
+
+.contacto__entrada {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--color-cuarto);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--color-primario);
+}
+
+.contacto__entrada:focus {
+    border-color: var(--color-terciario);
+    outline: none; /* Elimina el contorno predeterminado */
+}
+
+.contacto__boton {
+    background-color: var(--color-terciario);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contacto__boton:hover {
+    background-color: var(--color-hover);
+}
+
+
+
+

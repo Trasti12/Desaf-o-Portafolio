@@ -1,0 +1,59 @@
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: none;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+
+    .navegacion__elemento__contacto a {
+        display: block;
+    }
+
+
+
+    .presentacion {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        margin-left: 32px;
+    }
+    /* ------------------------------ Sección sobre mí ----------------------------------*/
+
+    .sobre-mi{
+        
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+}
